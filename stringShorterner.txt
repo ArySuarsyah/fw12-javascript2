@@ -1,0 +1,31 @@
+// buat penampung
+// ambil element yang mau diganti
+//  periksa element apakah memiliki nilai yang sama
+//  jika element sama maka element tersebut pasangkan dengan element yang sama
+// lalu pisahkan semua elemen yang sama ke penampung baru
+// setelah dipisahkan, element yang berpasangan di bagi habis(dihilangkan)
+//  setelah semua elemen yang memiliki pasangan dibagi habis, maka elemen yang tidak memiliki pasangan(tersisa) di keluarkan
+// element semua elemen yang memiliki pasangan disatukan
+// selesai
+
+
+
+
+let sisa = []
+let newArr = [];
+let result = []
+const stringShortener = ((str) => {
+let [...newArr] = str;
+    for (let i = 0; i < newArr.length-1; i++) {
+        if (newArr[i] == newArr[i++]) {
+            result.push(newArr[i])
+        } else {
+            sisa.push(newArr[i])
+        }
+    }
+    console.log(sisa);
+    console.log(newArr);
+    console.log(result);
+})
+
+stringShortener('array');
