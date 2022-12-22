@@ -15,7 +15,7 @@ let data = {
 
 let change = {...data, name: 'Arisuharsa', email: 'gotrany97@gmail.com', hobby: ['Membaca','Nonton', 'olahraga']};
 
-let {id, name, username, email, addres: {street, suite, city, zipcode}, phone, website} = change;
+let {addres: {street, city}} = change;
 
 
 console.log(change);
